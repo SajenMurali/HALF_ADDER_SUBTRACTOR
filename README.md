@@ -49,13 +49,25 @@ Figure -02 HALF Subtractor
 
 
 **Program:**
+module halfaddsub(a,b,sum,carry,D,Bo);
+input a,b;
+output sum,carry,D,Bo;
+wire abar;
+not(abar,a);
+xor(D,a,b);
+and(Bo,abar,b);
+endmodule
 
-/* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
 
-Developed by: RegisterNumber:*/
+Developed by: RegisterNumber:*
+sajen murali 212223220089
 
 **RTL Schematic**
+![image](https://github.com/naavaneetha/HALF_ADDER_SUBTRACTOR/assets/164154502/9f584f7e-3485-4665-b481-75c5bc9989fb)
 
 **Output/TIMING Waveform**
+![image](https://github.com/naavaneetha/HALF_ADDER_SUBTRACTOR/assets/164154502/2009c9a7-4a78-43ea-99f9-c25adc2d8de3)
+
 
 **Result:**
+executed successfully
